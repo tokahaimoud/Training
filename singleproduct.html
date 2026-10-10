@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product Details</title>
+
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    
+  
+
+    <style>
+      body {
+        color: #425a8b;
+        font-family: "DM Sans", sans-serif;
+      }
+
+      .product-box {
+        height: 200px;
+        width: 100%;
+        border: 5px solid #e5ebf4;
+      }
+
+      .price {
+        font-size: 32px;
+        color: #425a8b;
+      }
+
+      .nav-tabs {
+        border: 0;
+      }
+
+      .nav-tabs .nav-link {
+        border: 0;
+        color: #8ba5cc;
+        background: transparent;
+        font-size: 25px;
+      }
+
+      .nav-tabs .nav-link.active,
+      .nav-tabs .nav-link:hover {
+        color: #425a8b;
+      }
+
+      .add-to-cart:hover {
+        background-color: #425a8b !important;
+        color: #fff !important;
+      }
+
+      .form-check-input:checked {
+        background-color: #fff !important;
+        border-color: #425a8b !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23425A8B' stroke-width='2' d='m3 8 3 3 7-7'/%3E%3C/svg%3E") !important;
+      }
+
+      
+
+      .replay-link {
+        opacity: 0;
+        visibility: hidden;
+        color: #0dcaf0;
+      }
+
+      .review-card:hover .replay-link {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .form-check-input,
+      .form-check-label {
+        cursor: pointer;
+      }
+
+      .replay-link:hover {
+        color: #ffc107;
+      }
+
+      .title {
+        font-size: 12px;
+        line-height: 18px;
+        color: rgb(107, 131, 182);
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 20px;
+        color: #425a8b;
+      }
+
+      .text-brand {
+        color: #425a8b !important;
+        line-height: 1.2;
+      }
+
+      .text-vendor {
+        font-size: 14px;
+        line-height: 20px;
+        color: #8c9ec5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container px-4 py-3">
+      <!-- Frequently Bought Together -->
+      <h4 class="fw-bold mb-4">Frequently Bought Together</h4>
+
+      <div class="row align-items-center g-2">
+        <!-- Products -->
+        <div class="col-12 col-lg-8">
+          <div class="row align-items-center g-1">
+            <div class="col-4 d-flex align-items-center">
+              <div
+                class="product-box rounded d-flex align-items-center justify-content-center p-2"
+              >
+                <img
+                  src="./images/sp1.png"
+                  class="img-fluid w-75 h-75 object-fit-contain"
+                  alt="Headphones"
+                />
+              </div>
+              <span class="fs-4 ms-1">+</span>
+            </div>
+
+            <div class="col-4 d-flex align-items-center">
+              <div
+                class="product-box rounded d-flex align-items-center justify-content-center p-2"
+              >
+                <img
+                  src="./images/sp2.png"
+                  class="img-fluid w-75 h-75 object-fit-contain"
+                  alt="Smart Watch"
+                />
+              </div>
+              <span class="fs-4 ms-1">+</span>
+            </div>
+
+            <div class="col-4">
+              <div
+                class="product-box rounded d-flex align-items-center justify-content-center p-2"
+              >
+                <img
+                  src="./images/sp3.png"
+                  class="img-fluid w-75 h-75 object-fit-contain"
+                  alt="AirPods"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Price -->
+        <div class="col-12 col-lg-4 ps-lg-4">
+          <h3 class="price fw-bold mb-0">$2856.3</h3>
+          <div class="mt-1">(3 items)</div>
+
+          <button
+            class="add-to-cart btn mt-3 px-5 py-2 rounded-2 bg-white"
+            style="border-color: #b2c2e1; color: #425a8b"
+          >
+            Add To Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div class="form-check mb-2">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="product1"
+            checked
+          />
+
+          <label class="form-check-label" for="product1">
+            <strong>This item:</strong>
+            iPhone 12 Pro Max 128GB Pacific Blue - $1,099.00
+          </label>
+        </div>
+
+        <div class="form-check mb-2">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="product2"
+            checked
+          />
+
+          <label class="form-check-label" for="product2">
+            Apple AirPods Pro, Active Noise Cancellation, Custom Fit - $197.00
+          </label>
+        </div>
+
+        <div class="form-check mb-2">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="product3"
+            checked
+          />
+
+          <label class="form-check-label" for="product3">
+            Apple iMac 24" All-In-One Computer, Apple M1, 8GB RAM, 512GB SSD,
+            macOS Big Sur, Green, MGPJ3LL/A - $1,599.00
+          </label>
+        </div>
+      </div>
+
+      <!-- Product Details -->
+      <div class="mt-3">
+        <ul class="nav nav-tabs gap-3" id="productTabs" role="tablist">
+          <li class="nav-item">
+            <button
+              class="nav-link active fw-bold"
+              data-bs-toggle="tab"
+              data-bs-target="#description"
+              type="button"
+            >
+              Description
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-link fw-bold"
+              data-bs-toggle="tab"
+              data-bs-target="#specification"
+              type="button"
+            >
+              Specification
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-link fw-bold"
+              data-bs-toggle="tab"
+              data-bs-target="#additional"
+              type="button"
+            >
+              Additional information
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-link fw-bold"
+              data-bs-toggle="tab"
+              data-bs-target="#reviews"
+              type="button"
+            >
+              Reviews (2)
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-link fw-bold"
+              data-bs-toggle="tab"
+              data-bs-target="#vendor"
+              type="button"
+            >
+              Vendor
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+          <!-- Description -->
+          <div class="text tab-pane fade show active" id="description">
+            <p>
+              It is a paradisematic country, in which roasted parts of sentences
+              fly into your mouth. Even the all-powerful Pointing has no control
+              about the blind texts it is an almost unorthographic life. One day
+              however a small line of blind text by the name of Lorem Ipsum
+              decided to leave for the far World of Grammar. The Big Oxmox
+              advised her not to do so, because there were thousands of bad
+              Commas, wild Question Marks and devious Semikoli, but the Little
+              Blind Text didn't listen.
+            </p>
+
+            <div class="collapse" id="moreDescription">
+              <p>
+                When she reached the first hills of the Italic Mountains, she
+                had a last view back on the skyline of her hometown
+                Bookmarksgrove, the headline of Alphabet Village and the subline
+                of her own road, the Line Lane.
+
+                <br /><br />
+
+                Pityful a rethoric question ran over her cheek, then she
+                continued her way. On her way she met a copy. The copy warned
+                the Little Blind Text, that where it came from it would have
+                been rewritten a thousand times and everything that was left
+                from its origin would be the word “and”.
+              </p>
+            </div>
+
+            <div class="text-center mt-4" id="moreDetailsButton">
+              <button
+                class="btn px-5 py-2 bg-white rounded-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#moreDescription"
+                aria-expanded="false"
+                aria-controls="moreDescription"
+                style="border: 1px solid #b2c2e1; color: #425a8b"
+              >
+                More Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Specification -->
+          <div class="tab-pane fade" id="specification">
+            <h5 class="fw-bold">Product Specification</h5>
+
+            <table class="table table-striped mt-3">
+              <tbody>
+                <tr>
+                  <td>Mode</td>
+                  <td>#SK10923</td>
+                </tr>
+                <tr>
+                  <td>Brand</td>
+                  <td>SamSung</td>
+                </tr>
+                <tr>
+                  <td>Size</td>
+                  <td>6.7"</td>
+                </tr>
+                <tr>
+                  <td>Finish</td>
+                  <td>Pacific Blue</td>
+                </tr>
+                <tr>
+                  <td>Origin of Country</td>
+                  <td>United States</td>
+                </tr>
+                <tr>
+                  <td>Manufacturer</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Released Year</td>
+                  <td>2022</td>
+                </tr>
+                <tr>
+                  <td>Warranty</td>
+                  <td>International</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="tab-pane fade" id="additional">
+            <h5 class="fw-bold">Additional Information</h5>
+
+            <table class="table table-striped mt-3">
+              <tbody>
+                <tr>
+                  <td>Weight</td>
+                  <td>0.240 kg</td>
+                </tr>
+                <tr>
+                  <td>Dimensions</td>
+                  <td>0.74 x 7.64 x 16.08 cm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Reviews -->
+        <!-- Reviews -->
+<div class="tab-pane fade" id="reviews">
+  <section class="py-4">
+    <div class="container-fluid px-0">
+      <div class="row g-4">
+
+        <!-- Customer Questions & Answers -->
+        <div class="col-12 col-lg-8 ">
+
+          <h4 class="mb-4 fs-5">
+            Customer questions &amp; answers
+          </h4>
+
+          <!-- Review 1 -->
+          <div class="card border mb-4 w-100">
+            <div class="card-body p-3 p-md-4">
+              <div class="row g-3 align-items-start">
+
+                <!-- Author -->
+                <div class="col-12 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="./images/author-2.png"
+                    class="rounded-circle mb-2 img-fluid"
+                    style="width: 100px; height: 100px; object-fit: cover;"
+                    alt="Sienna"
+                  />
+
+                  <a href="#" class="text-decoration-none">
+                    <h6 class="fw-bold text mb-0">Sienna</h6>
+                  </a>
+                </div>
+
+                <!-- Review Content -->
+                <div class="col-12 col-sm-9 col-md-10">
+
+                  <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                    <small class="title">
+                      December 4, 2022 at 3:12 pm
+                    </small>
+
+                    <div class="text-warning text-nowrap">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+
+                  <p class="text mt-3 mb-0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Delectus, suscipit exercitationem accusantium
+                    obcaecati quos voluptate nesciunt facilis itaque modi
+                    commodi dignissimos sequi repudiandae minus ab
+                    deleniti totam officia id incidunt?
+
+                    <a href="#" class="replay-link ms-2 text-decoration-none">
+                      Reply?
+                    </a>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="card border mb-4 w-100 ms-md-4"
+               style="width: calc(100% - 1.5rem) !important;">
+            <div class="card-body p-3 p-md-4">
+              <div class="row g-3 align-items-start">
+
+                <div class="col-12 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="./images/author-3.png"
+                    class="rounded-circle mb-2 img-fluid"
+                    style="width: 100px; height: 100px; object-fit: cover;"
+                    alt="Sienna"
+                  />
+
+                  <a href="#" class="text-decoration-none">
+                    <h6 class="fw-bold text mb-0">Sienna</h6>
+                  </a>
+                </div>
+
+                <div class="col-12 col-sm-9 col-md-10">
+
+                  <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                    <small class="title">
+                      December 4, 2022 at 3:12 pm
+                    </small>
+
+                    <div class="text-warning text-nowrap">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+
+                  <p class="text mt-3 mb-0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Delectus, suscipit exercitationem accusantium
+                    obcaecati quos voluptate nesciunt facilis itaque modi
+                    commodi dignissimos sequi repudiandae minus ab
+                    deleniti totam officia id incidunt?
+
+                    <a href="#" class="replay-link ms-2 text-decoration-none">
+                      Reply?
+                    </a>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="card border mb-4 w-100">
+            <div class="card-body p-3 p-md-4">
+              <div class="row g-3 align-items-start">
+
+                <div class="col-12 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="./images/author-4.png"
+                    class="rounded-circle mb-2 img-fluid"
+                    style="width: 100px; height: 100px; object-fit: cover;"
+                    alt="Sienna"
+                  />
+
+                  <a href="#" class="text-decoration-none">
+                    <h6 class="fw-bold text mb-0">Sienna</h6>
+                  </a>
+                </div>
+
+                <div class="col-12 col-sm-9 col-md-10">
+
+                  <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                    <small class="title">
+                      December 4, 2022 at 3:12 pm
+                    </small>
+
+                    <div class="text-warning text-nowrap">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+
+                  <p class="text mt-3 mb-0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Delectus, suscipit exercitationem accusantium
+                    obcaecati quos voluptate nesciunt facilis itaque modi
+                    commodi dignissimos sequi repudiandae minus ab
+                    deleniti totam officia id incidunt?
+
+                    <a href="#" class="replay-link ms-2 text-decoration-none">
+                      Reply?
+                    </a>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    <!-- Customer Reviews Summary -->
+<div class="col-12 col-lg-4 ">
+
+  <h4 class="fs-5 mb-4">
+    Customer reviews
+  </h4>
+
+  <!-- Overall Rating -->
+  <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+
+    <div class="text-warning text-nowrap">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+    </div>
+
+    <h4 class="mb-0 fs-5">
+      4.8 out of 5
+    </h4>
+
+  </div>
+
+  <!-- 5 Stars: 50% -->
+  <div class="d-flex align-items-center gap-3 mb-3">
+    <span class="text text-nowrap">5 star</span>
+
+    <div class="progress flex-grow-1 rounded-0" style="height: 20px;">
+      <div
+        class="progress-bar rounded-0"
+        role="progressbar"
+        style="width: 50%; background-color: #0BA9ED;"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100">
+        50%
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 Stars: 25% -->
+  <div class="d-flex align-items-center gap-3 mb-3">
+    <span class="text text-nowrap">4 star</span>
+
+    <div class="progress flex-grow-1 rounded-0" style="height: 20px;">
+      <div
+        class="progress-bar rounded-0"
+        role="progressbar"
+        style="width: 25%; background-color: #0BA9ED;"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100">
+        25%
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 Stars: 45% -->
+  <div class="d-flex align-items-center gap-3 mb-3">
+    <span class="text text-nowrap">3 star</span>
+
+    <div class="progress flex-grow-1 rounded-0" style="height: 20px;">
+      <div
+        class="progress-bar rounded-0"
+        role="progressbar"
+        style="width: 45%; background-color: #0BA9ED;"
+        aria-valuenow="45"
+        aria-valuemin="0"
+        aria-valuemax="100">
+        45%
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 Stars: 65% -->
+  <div class="d-flex align-items-center gap-3 mb-3">
+    <span class="text text-nowrap">2 star</span>
+
+    <div class="progress flex-grow-1 rounded-0" style="height: 20px;">
+      <div
+        class="progress-bar rounded-0"
+        role="progressbar"
+        style="width: 65%; background-color: #0BA9ED;"
+        aria-valuenow="65"
+        aria-valuemin="0"
+        aria-valuemax="100">
+        65%
+      </div>
+    </div>
+  </div>
+
+  <!-- 1 Star: 85% -->
+  <div class="d-flex align-items-center gap-3 mb-4">
+    <span class="text text-nowrap">1 star</span>
+
+    <div class="progress flex-grow-1 rounded-0" style="height: 20px;">
+      <div
+        class="progress-bar rounded-0"
+        role="progressbar"
+        style="width: 85%; background-color: #0BA9ED;"
+        aria-valuenow="85"
+        aria-valuemin="0"
+        aria-valuemax="100">
+        85%
+      </div>
+    </div>
+  </div>
+
+  <!-- Rating Information -->
+  <small>
+    <a href="#" class="title text-decoration-none">
+      How are ratings calculated?
+    </a>
+  </small>
+
+</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+          <!-- Vendor -->
+          <div class="tab-pane fade" id="vendor">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="d-flex align-items-center py-3">
+                    <div class="px-3">
+                      <img
+                        src="./images/futur.png"
+                        class="img-fluid"
+                        alt="Futur"
+                      />
+                    </div>
+
+                    <div>
+                      <a
+                        href="./vendor-single.html"
+                        class="text-decoration-none"
+                      >
+                        <h6 class="fw-bold text-info mb-1">Futur Tech.</h6>
+                      </a>
+
+                      <div class="d-flex align-items-center">
+                        <div class="text-warning me-2">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                        </div>
+
+                        <span class="text-secondary"> (32 reviews) </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-2">
+                    <i class="bi bi-geo-alt text me-2"></i>
+
+                    <span class="fw-bold text"> Address: </span>
+
+                    <span class="text-secondary">
+                      5171 W Campbell Ave undefined Kent, Utah 53127 United
+                      States
+                    </span>
+                  </div>
+
+                  <div class="mb-5">
+                    <i class="bi bi-headset text me-2"></i>
+
+                    <span class="fw-bold text"> Contact Seller: </span>
+
+                    <span class="text-secondary"> (+91) - 540-025-553 </span>
+                  </div>
+
+                  <div class="row justify-content-start">
+                    <div class="col-md-1 col-4">
+                      <div class="title text-info mb-1">Rating</div>
+                      <div class="text-brand fs-3 fw-bold">92%</div>
+                    </div>
+
+                    <div class="col-md-1 col-4">
+                      <div class="title text-info mb-1">Ship on time</div>
+                      <div class="text-brand fs-3 fw-bold">100%</div>
+                    </div>
+
+                    <div class="col-md-1 col-4">
+                      <div class="title text-info mb-1">Chat response</div>
+                      <div class="text-brand fs-3 fw-bold">89%</div>
+                    </div>
+                  </div>
+
+                  <p class="text-vendor mt-3">
+                    Noodles & Company is an American fast-casual restaurant that
+                    offers international and American noodle dishes and pasta in
+                    addition to soups and salads. Noodles & Company was founded
+                    in 1995 by Aaron Kennedy and is headquartered in Broomfield,
+                    Colorado. The company went public in 2013 and recorded a
+                    $457 million revenue in 2017. In late 2018, there were 460
+                    Noodles & Company locations across 29 states and Washington,
+                    D.C.
+
+                    <br /><br />
+
+                    Proin congue dapibus rhoncus. Curabitur ipsum orci,
+                    malesuada in porttitor a, porttitor quis diam. Nunc at arcu
+                    ut turpis facilisis volutpat. Proin tristique, mauris non
+                    gravida dignissim, purus mauris malesuada tellus, in
+                    tincidunt orci enim eget ligula. Quisque bibendum, ipsum id
+                    malesuada placerat, purus felis vehicula risus, vel
+                    fringilla justo erat ullamcorper ligula. Fusce congue
+                    ullamcorper ligula, at commodo turpis molestie vel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const moreDescription = document.getElementById("moreDescription");
+      const moreDetailsButton = document.getElementById("moreDetailsButton");
+
+      moreDescription.addEventListener("shown.bs.collapse", () => {
+        moreDetailsButton.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
